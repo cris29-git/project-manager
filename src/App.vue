@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <h1 class="text-3xl font-bold text-center text-green-600 mb-4">Gestión de Proyectos</h1>
+    <AddProject />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddProject from './components/AddProject.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    AddProject,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Otros estilos globales aquí */
 </style>
